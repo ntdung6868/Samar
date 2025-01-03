@@ -17,3 +17,88 @@ html,
 body {
     scroll-behavior: smooth;
 }
+
+/* =============================================== Common =============================================== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 175px;
+    height: 60px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    background-color: #4158d0;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-position: right center;
+}
+
+/* =============================================== Header =============================================== */
+.header {
+    padding: 35px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-left: auto;
+    padding: 0 40px;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    color: #070120;
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.navbar__item:hover {
+    color: #f55f8d;
+}
+
+.navbar__arrow {
+    width: 10px;
+    height: 13px;
+    margin-left: -5px;
+    transform: translateX(50%) translateY(10%);
+    transition: filter, transform 0.2s;
+}
+
+.navbar__item:hover .navbar__arrow {
+    filter: invert(57%) sepia(83%) saturate(2407%) hue-rotate(306deg) brightness(97%) contrast(99%);
+    transform: rotate(90deg) translateY(-50%) translateX(10%);
+}
+
