@@ -24,6 +24,9 @@
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
+        <!-- Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -36,50 +39,91 @@
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="#home">
+                                <a href="#home" class="navbar__link">
                                     Home
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#pages">
+                                <a href="#pages" class="navbar__link">
                                     Pages
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#services">
+                                <a href="#services" class="navbar__link">
                                     Services
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#post-layout">
+                                <a href="#post-layout" class="navbar__link">
                                     Post Layout
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#blog">
+                                <a href="#blog" class="navbar__link">
                                     Blog
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#contact-us">
+                                <a href="#contact-us" class="navbar__link">
                                     Contact Us
                                     <img class="navbar__arrow" src="./assets/icon/angle-down-solid.svg" alt="" />
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <a href="#!" class="btn header__action">GET A QUOTE</a>
+                    <div class="header__action"><a href="#!" class="btn">GET A QUOTE</a></div>
                 </div>
             </div>
         </header>
-        
+
         <!-- Main -->
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__content">
+                            <p class="sub-title" data-aos="fade-right" data-aos-delay="150">We are The Best</p>
+                            <h1 class="heading" data-aos="fade-up" data-aos-delay="300">
+                                Freelance Product Designer Running
+                            </h1>
+                            <p class="desc" data-aos="fade-up" data-aos-delay="450">
+                                We develop the relationships that underpin the next phase in your organisation’s growth.
+                            </p>
+                            <div class="hero__article">
+                                <ul class="hero__article__list">
+                                    <li class="hero__article__item" data-aos="fade-up" data-aos-delay="600">
+                                        Master's degree in designing
+                                    </li>
+                                    <li class="hero__article__item" data-aos="fade-up" data-aos-delay="750">
+                                        Outstanding mobile design
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hero__action" data-aos="fade-up" data-aos-delay="900">
+                                <a href="#!" class="btn">GET STARTED</a>
+                            </div>
+                        </div>
+                        <div class="hero__media" data-aos="zoom-in-left" data-aos-duration="1500">
+                            <figure class="hero__media-wrap">
+                                <img class="hero__media-image" src="./assets/img/hero.png" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
