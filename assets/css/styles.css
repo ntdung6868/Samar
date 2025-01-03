@@ -70,6 +70,14 @@ a {
     margin-bottom: 20px;
 }
 
+.heading-lv2 {
+    font-size: 6.3rem;
+}
+
+.heading-lv3 {
+    font-size: 2.4rem;
+}
+
 .desc {
     color: #636363;
     font-size: 1.8rem;
@@ -139,6 +147,7 @@ a {
     align-items: center;
     background-image: url(../img/hero-bg.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .hero__inner {
@@ -214,4 +223,59 @@ a {
     background: linear-gradient(0deg, rgba(245, 95, 141, 1) 0%, rgba(248, 174, 86, 1) 51%);
     z-index: -1;
     border-radius: 50px;
+}
+
+/* =============================================== Service =============================================== */
+.service {
+    padding: 80px 0;
+    background-image: url("../img/service-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.service__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__content {
+    margin-top: 20px;
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.service__item {
+    padding: 30px 45px;
+    background-color: #ffffff;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.service__item:hover {
+    transform: translateY(-20px);
+    border-image: url(../img/service-br.png) 0.5% round;
+}
+
+.service__item-img {
+    width: 74.14%;
+    vertical-align: bottom;
+}
+
+.service__item-heading {
+    padding: 22px 0;
+    margin-bottom: 0;
 }
