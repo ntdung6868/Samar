@@ -20,6 +20,17 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Custom  scrollbar */
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.2);
+}
+
 /* =============================================== Common =============================================== */
 a {
     text-decoration: none;
@@ -390,4 +401,33 @@ a {
     margin-bottom: 0;
     color: #262626;
     font-size: 1.8rem;
+}
+
+/* =============================================== Back To Top =============================================== */
+.backToTop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #f55f8d;
+    border-radius: 10px;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.backToTop-icon {
+    width: 18px;
+    rotate: 180deg;
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }
