@@ -333,3 +333,61 @@ a {
     width: 25px;
     filter: invert(49%) sepia(50%) saturate(653%) hue-rotate(292deg) brightness(96%) contrast(100%);
 }
+
+/* =============================================== Stats =============================================== */
+.stats {
+    margin: 50px 0;
+    padding: 60px 0;
+    background-image: url("../img/stats-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stats__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 160px;
+}
+
+.stats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats__item-icon-wrap {
+    width: 80px;
+    height: 80px;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats__item-icon {
+    width: 56.25%;
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+    fill: black;
+    stroke: black;
+    stroke-width: 20;
+}
+
+.stats__item-qty {
+    width: 180px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: #f55f8d;
+    line-height: 100%;
+}
+
+.stats__item-desc {
+    margin-bottom: 0;
+    color: #262626;
+    font-size: 1.8rem;
+}
