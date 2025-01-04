@@ -156,7 +156,7 @@ a {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(../img/hero-bg.png);
+    background-image: url(../img/bg1.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -238,9 +238,9 @@ a {
 /* =============================================== Service =============================================== */
 .service {
     padding: 50px 0;
-    background-image: url("../img/service-bg.png");
+    background-image: url("../img/bg2.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .service__inner {
@@ -293,7 +293,7 @@ a {
 /* =============================================== About =============================================== */
 .about {
     padding: 50px 0;
-    background-image: url("../img/about-bg.png");
+    background-image: url("../img/bg3.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -349,7 +349,7 @@ a {
 .stats {
     margin: 50px 0;
     padding: 60px 0;
-    background-image: url("../img/stats-bg.png");
+    background-image: url("../img/bg4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -403,6 +403,115 @@ a {
     font-size: 1.8rem;
 }
 
+/* =============================================== Features =============================================== */
+.feature {
+    padding: 50px 0;
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.feature__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.feature-heading {
+    margin-bottom: 30px;
+}
+
+.feature__content {
+    width: 50%;
+}
+
+.feature__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.feature__item {
+    position: relative;
+    width: 91.7%;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
+    padding: 30px;
+    border-radius: 10px;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.feature__item::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s;
+}
+
+.feature__item:hover {
+    background-color: transparent;
+}
+
+.feature__item:hover::after {
+    opacity: 1;
+}
+
+.feature__item:nth-child(2) {
+    align-self: flex-end;
+}
+
+.feature__item-icon {
+    width: 80px;
+    height: 83px;
+    filter: invert(52%) sepia(38%) saturate(1137%) hue-rotate(298deg) brightness(98%) contrast(97%);
+    transition: filter 1s;
+}
+
+.feature__item:hover .feature__item-icon {
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+}
+
+.feature__item-heading {
+    margin-bottom: 5px;
+    transition: color 1s;
+}
+
+.feature__item:hover .feature__item-heading {
+    color: #fff;
+}
+
+.feature__item-desc {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    transition: color 0.8s;
+}
+
+.feature__item:hover .feature__item-desc {
+    color: #fff;
+}
+
+.feature__media {
+    width: 50%;
+}
+
+.feature__media-wrap {
+    width: 100%;
+}
+
+.feature__media-image {
+    width: 100%;
+    animation: move 3s infinite;
+}
+
 /* =============================================== Back To Top =============================================== */
 .backToTop {
     position: fixed;
@@ -430,4 +539,19 @@ a {
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
+}
+
+/* =============================================== Keyframes =============================================== */
+@keyframes move {
+    0% {
+        rotate: 1deg;
+    }
+
+    50% {
+        rotate: -1deg;
+    }
+
+    100% {
+        rotate: 1deg;
+    }
 }
