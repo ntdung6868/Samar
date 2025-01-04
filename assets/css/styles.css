@@ -48,7 +48,7 @@ a {
     background-color: #4158d0;
     background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
     background-size: 200%;
-    transition: all 0.3s !important;
+    transition: all 0.3s;
 }
 
 .btn:hover {
@@ -157,7 +157,6 @@ a {
 
 .hero__content {
     width: 50%;
-    /* margin-bottom: 10%; */
 }
 
 .hero__article {
@@ -227,7 +226,7 @@ a {
 
 /* =============================================== Service =============================================== */
 .service {
-    padding: 80px 0;
+    padding: 50px 0;
     background-image: url("../img/service-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -278,4 +277,59 @@ a {
 .service__item-heading {
     padding: 22px 0;
     margin-bottom: 0;
+}
+
+/* =============================================== About =============================================== */
+.about {
+    padding: 50px 0;
+    background-image: url("../img/about-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+}
+
+.about__media {
+    width: 50%;
+}
+
+.about__media-wrap {
+    width: 120%;
+    transform: translateX(-28%);
+    border: 0 50px 50px 0;
+}
+
+.about__media-image {
+    width: 100%;
+    border-radius: 0 100px 100px 0;
+    vertical-align: bottom;
+}
+
+.about__content {
+    width: 50%;
+}
+
+.about__article {
+    margin-bottom: 35px;
+}
+
+.about__article__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__article__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.about__article__item-icon {
+    width: 25px;
+    filter: invert(49%) sepia(50%) saturate(653%) hue-rotate(292deg) brightness(96%) contrast(100%);
 }
