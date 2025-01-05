@@ -24,7 +24,7 @@
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
-        <!-- Animation -->
+        <!-- AOS Animation -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -38,6 +38,15 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
             integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Swiper Carousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+            integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
@@ -422,9 +431,8 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="150"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-1.jpg" alt="" />
                                     </figure>
@@ -453,9 +461,9 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="300"
+                                        data-aos-delay="50"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-2.jpg" alt="" />
                                     </figure>
@@ -484,9 +492,8 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="450"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-3.jpg" alt="" />
                                     </figure>
@@ -515,9 +522,9 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="600"
+                                        data-aos-delay="50"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-4.jpg" alt="" />
                                     </figure>
@@ -546,9 +553,8 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="850"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-5.jpg" alt="" />
                                     </figure>
@@ -577,9 +583,9 @@
                                     <figure
                                         class="portfolio__item-wrap"
                                         data-aos="fade-up"
-                                        data-aos-duration="1500"
+                                        data-aos-duration="1000"
                                         data-aos-once="true"
-                                        data-aos-delay="1050"
+                                        data-aos-delay="100"
                                     >
                                         <img class="portfolio__item-img" src="./assets/img/portfolio-6.jpg" alt="" />
                                     </figure>
@@ -605,6 +611,268 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <div class="blog__title">
+                            <p class="sub-title">Our Blog</p>
+                            <h2 class="heading heading-lv2 blog__heading">Latest News & Blog</h2>
+                        </div>
+                        <div class="swiper">
+                            <div class="blog__list swiper-wrapper">
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-1.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">23 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!"> Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">JOHNE DOE</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 15</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-2.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">24 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">NGUYEN TRI DUNG</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 1208</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-3.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">25 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">JOHNE DOE</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 38</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-4.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">26 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">NGUYEN TRI DUNG</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 2003</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-5.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">24 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">NGUYEN TRI DUNG</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 1208</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-6.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">25 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">JOHNE DOE</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 38</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="blog__item swiper-slide">
+                                    <div class="blog__item-media">
+                                        <figure class="blog__item-img-wrap">
+                                            <a href="#!">
+                                                <img class="blog__item-img" src="./assets/img/blog-7.jpg" alt="" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog__item-content">
+                                        <div class="blog__item-date">25 MARCH 2024</div>
+                                        <h3 class="heading heading-lv3 blog__item-heading">
+                                            <a href="#!">Lorem ipsum dolor sit amet consectetur.</a>
+                                        </h3>
+                                        <p class="desc blog__item-desc">
+                                            Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                            Phasellus justo quam.
+                                        </p>
+                                    </div>
+                                    <div class="blog__item-info">
+                                        <div class="blog__item-author">
+                                            <img
+                                                class="blog__item-icon"
+                                                src="./assets/icon/circle-user-regular.svg"
+                                                alt=""
+                                            />
+                                            <p class="blog__item-author-desc">
+                                                BY <span class="blog__item-author-name">JOHNE DOE</span>
+                                            </p>
+                                        </div>
+                                        <div class="blog__item-comment">
+                                            <img class="blog__item-icon" src="./assets/icon/comment-alt.svg" alt="" />
+                                            <p class="blog__item-comment-desc">COMMENTS 38</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -644,6 +912,12 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
             integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+            integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
