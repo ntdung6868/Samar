@@ -15,11 +15,6 @@ body {
     line-height: 160%;
 }
 
-html,
-body {
-    scroll-behavior: smooth;
-}
-
 /* Custom  scrollbar */
 ::-webkit-scrollbar {
     border-radius: 0;
@@ -31,10 +26,26 @@ body {
     background-color: rgba(22, 24, 35, 0.2);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--text-color-white);
+    caret-color: var(--text-color-white);
+}
+
 /* =============================================== Common =============================================== */
 a {
     text-decoration: none;
+}
+
+a,
+button,
+input {
     color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .container {
@@ -47,7 +58,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 175px;
+    /* min-width: 175px; */
     height: 60px;
     color: #fff;
     padding: 0 20px;
@@ -517,7 +528,7 @@ a {
 
 .feature__media-image {
     width: 100%;
-    animation: move 3s infinite;
+    animation: move1 3s infinite;
 }
 
 /* =============================================== Portfolio =============================================== */
@@ -783,6 +794,243 @@ a {
     color: #f55f8d;
 }
 
+/* =============================================== Portfolio =============================================== */
+.footer {
+    position: relative;
+    background-image: url(../img/bg7.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: #0e1b1f;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/footer-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+}
+
+.footer__top {
+    position: relative;
+    padding: 50px 60px;
+    background-image: url(../img/footer-bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__top-heading {
+    font-size: 2.8rem;
+}
+
+.footer__form {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 67px;
+    border-radius: 8px;
+    box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
+}
+
+.footer__form-input,
+.btn-footer {
+    border: none;
+    outline: none;
+}
+
+.footer__form-input {
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    transition: all 0.4s;
+}
+
+.footer__form-input:hover,
+.footer__form-input:focus {
+    border-color: #f55f8d;
+}
+
+.btn-footer {
+    min-width: 94px;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+}
+
+.btn-footer-icon {
+    width: 18px;
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+}
+
+.btn-footer:hover .btn-footer-icon {
+    animation: move2 0.5s forwards;
+}
+
+.footer__bottom {
+    position: relative;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+.footer__info {
+    padding: 10px 0;
+}
+
+.footer__info-item {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__info-icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.footer__info-icon {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+}
+
+.footer__heading {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer__heading::before,
+.footer__heading::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 4px;
+    bottom: 0;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+    border-radius: 2px;
+}
+
+.footer__heading::before {
+    width: 15px;
+    left: 0;
+}
+
+.footer__heading::after {
+    width: 45px;
+    left: 20px;
+}
+
+.footer__link-list {
+    margin-top: 30px;
+}
+
+.footer__link-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__link-icon {
+    rotate: -90deg;
+    width: 14px;
+    height: 100%;
+    filter: invert(79%) sepia(0%) saturate(0%) hue-rotate(53deg) brightness(92%) contrast(90%);
+}
+
+.footer__link {
+    padding: 8px 0;
+    color: rgb(180, 180, 180);
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: white;
+    font-weight: 500;
+}
+
+.footer__copyright {
+    position: relative;
+    padding: 10px 0;
+    background-color: #1f343b;
+}
+
+.footer__info-content {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.footer__copyright-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright-desc {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.footer__copyright-desc span {
+    color: #f55f8d;
+}
+
+.footer__contact-list {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.footer__contact-item {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer__contact-item:hover {
+    background-color: #f55f8d;
+}
+
+.footer__contact-item-icon {
+    height: 14px;
+    filter: invert(100%) sepia(93%) saturate(3%) hue-rotate(355deg) brightness(107%) contrast(100%);
+}
+
 /* =============================================== Back To Top =============================================== */
 .backToTop {
     position: fixed;
@@ -799,6 +1047,7 @@ a {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    z-index: 999;
 }
 
 .backToTop-icon {
@@ -813,7 +1062,7 @@ a {
 }
 
 /* =============================================== Keyframes =============================================== */
-@keyframes move {
+@keyframes move1 {
     0% {
         rotate: 1deg;
     }
@@ -824,5 +1073,15 @@ a {
 
     100% {
         rotate: 1deg;
+    }
+}
+
+@keyframes move2 {
+    50% {
+        transform: translateX(200%);
+    }
+    51% {
+        opacity: 0;
+        transform: translateX(-100%);
     }
 }
